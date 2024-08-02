@@ -1,0 +1,14 @@
+package site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UpdateThreadPoolConfigDTO {
+    String threadPoolName;
+    private Integer corePoolSize;
+    private Integer maximumPoolSize;
+}
