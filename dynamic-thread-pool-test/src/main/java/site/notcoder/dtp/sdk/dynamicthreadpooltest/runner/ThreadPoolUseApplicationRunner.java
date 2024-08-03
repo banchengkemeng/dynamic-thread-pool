@@ -1,11 +1,12 @@
 package site.notcoder.dtp.sdk.dynamicthreadpooltest.runner;
 
+import org.redisson.api.RedissonClient;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
 import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
 import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.entity.ThreadPoolConfigEntity;
-import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.DynamicThreadPoolService;
+import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.DynamicThreadPoolService;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -43,6 +44,7 @@ public class ThreadPoolUseApplicationRunner implements ApplicationRunner {
                     if (startDuration == 3) {
                         dynamicThreadPoolService.updateThreadPoolConfig(
                                 new UpdateThreadPoolConfigDTO(
+                                        "dynamic-thread-pool-test",
                                         "threadPoolExecutor01",
                                         88,
                                         666

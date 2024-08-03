@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UpdateThreadPoolConfigDTO {
-    String threadPoolName;
+    private String applicationName;
+    private String threadPoolName;
     private Integer corePoolSize;
     private Integer maximumPoolSize;
 }

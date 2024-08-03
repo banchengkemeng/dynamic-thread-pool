@@ -1,7 +1,6 @@
-package site.notcoder.dtp.sdk.dynamicthreadpooltest.config;
+package site.notcoder.dtp.sdk.dynamicthreadpooltest.config.propertis;
 
 import lombok.Data;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 /**
@@ -10,7 +9,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "thread.pool.executor.config")
 @Data
-public class ThreadPoolConfigProperties {
+public class ThreadPoolConfigAutoProperties {
     private Integer corePoolSize;
     private Integer maxPoolSize;
     private Integer keepAliveTime;

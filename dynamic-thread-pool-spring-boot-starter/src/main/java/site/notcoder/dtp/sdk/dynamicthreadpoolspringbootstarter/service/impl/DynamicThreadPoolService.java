@@ -1,10 +1,10 @@
-package site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service;
+package site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
 import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.entity.ThreadPoolConfigEntity;
+import site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
 
 import java.util.ArrayList;
 import java.util.List;

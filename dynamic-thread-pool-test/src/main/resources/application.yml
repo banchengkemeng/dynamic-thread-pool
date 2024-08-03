@@ -3,3 +3,5 @@ spring:
     name: dynamic-thread-pool-test
   profiles:
     active: dev
+server:
+  port: 8080

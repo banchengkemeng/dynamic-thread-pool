@@ -5,17 +5,18 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableAsync;
+import site.notcoder.dtp.sdk.dynamicthreadpooltest.config.propertis.ThreadPoolConfigAutoProperties;
 
 import java.util.concurrent.*;
 
 @Slf4j
 @EnableAsync
 @Configuration
-@EnableConfigurationProperties(ThreadPoolConfigProperties.class)
+@EnableConfigurationProperties(ThreadPoolConfigAutoProperties.class)
 public class ThreadPoolConfig {
 
     @Bean
-    public ThreadPoolExecutor threadPoolExecutor01(ThreadPoolConfigProperties properties) {
+    public ThreadPoolExecutor threadPoolExecutor01(ThreadPoolConfigAutoProperties properties) {
         return new ThreadPoolExecutor(
                 properties.getCorePoolSize(),
                 properties.getMaxPoolSize(),
@@ -28,7 +29,7 @@ public class ThreadPoolConfig {
     }
 
     @Bean
-    public ThreadPoolExecutor threadPoolExecutor02(ThreadPoolConfigProperties properties) {
+    public ThreadPoolExecutor threadPoolExecutor02(ThreadPoolConfigAutoProperties properties) {
         return new ThreadPoolExecutor(
                 properties.getCorePoolSize(),
                 properties.getMaxPoolSize(),
