@@ -1,2 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  site.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.config.DynamicThreadPoolAutoConfig

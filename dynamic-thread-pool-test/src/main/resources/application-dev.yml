@@ -19,3 +19,22 @@ dynamic-thread-pool:
       host: 192.168.67.129
       port: 16379
       password: bancheng666..
+    report-cron: "0/20 * * * * ?"
+
+#spring:
+#  redis:
+#    port: 16379
+#    host: 192.168.67.129
+#    password: bancheng666..
+
+dynamic:
+  thread:
+    pool:
+      config:
+        # 状态；true = 开启、false 关闭
+        enabled: true
+        # redis host
+        host: 192.168.67.129
+        # redis port
+        port: 16379
+        password: bancheng666..
