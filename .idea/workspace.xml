@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="修复redisClient相关Bug, 完成定时上报线程池功能">
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+    <option name="PARALLEL_COMPILATION" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/test-starter">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="JUnit5 Test Class" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://D:/MavenRepository/org/redisson/redisson-spring-boot-starter/3.26.0/redisson-spring-boot-starter-3.26.0-sources.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="jar://D:/MavenRepository/org/redisson/redisson/3.26.0/redisson-3.26.0-sources.jar!/org/redisson/api/RList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://D:/MavenRepository/org/springframework/spring-core/5.3.24/spring-core-5.3.24.jar!/org/springframework/cglib/proxy/MethodProxy.class" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\MavenRepository" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.8.6" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.8.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2k6VyK8y2jLNFxiXqzUTosDe0r4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.ApiTest (1).executor": "Run",
+    "JUnit.ApiTest.executor": "Run",
+    "JUnit.ApiTest.testDynamicThreadPoolRedisTopic (1).executor": "Run",
+    "JUnit.ApiTest.testDynamicThreadPoolRedisTopic.executor": "Run",
+    "JUnit.DynamicThreadPoolTestApplicationTests.contextLoads.executor": "Run",
+    "JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic.executor": "Run",
+    "JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool.executor": "Run",
+    "Maven.cn-test-starter [clean].executor": "Run",
+    "Maven.cn-test-starter [install].executor": "Run",
+    "Maven.dynamic-thread-pool [clean].executor": "Run",
+    "Maven.dynamic-thread-pool [compile].executor": "Run",
+    "Maven.dynamic-thread-pool [install].executor": "Run",
+    "Maven.dynamic-thread-pool-spring-boot-starter [clean].executor": "Run",
+    "Maven.dynamic-thread-pool-spring-boot-starter [install].executor": "Run",
+    "Maven.dynamic-thread-pool-test [clean].executor": "Run",
+    "Maven.dynamic-thread-pool-test [compile].executor": "Run",
+    "Maven.test-starter [clean].executor": "Run",
+    "Maven.test-starter [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Debug",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/code/dynamic-thread-pool",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\dynamic-thread-pool\cn-test-starter\src\main" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\java\site\notcoder\dtp\sdk\dynamicthreadpoolspringbootstarter" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test\src\main\resources" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test\src\main\java\site\notcoder\dtp\sdk\dynamicthreadpooltest\xfg" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\java\site\notcoder\dtp\sdk\dynamicthreadpoolspringbootstarter\xfg" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\dynamic-thread-pool" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.config" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.notcoder.cnteststarter" />
+      <recent name="site.bugstack.cnnotcoderteststarter" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool">
+    <configuration name="DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
+      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
+      <option name="METHOD_NAME" value="testDynamicThreadPoolRedisTopic" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicThreadPoolTestApplicationTests.testThreadPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
+      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
+      <option name="METHOD_NAME" value="testThreadPool" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicThreadPoolTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" />
+      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
+      <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
+        <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-1.8.0_402-corretto-1.8.0_402-4caba194b151-ae57be32" />
+        <option value="jdk-19.0.2-corretto-19.0.2-4caba194b151-48ba4555" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="" />
+      <created>1722604269016</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722604269016</updated>
+      <workItem from="1722604270124" duration="12921000" />
+      <workItem from="1722617533145" duration="536000" />
+      <workItem from="1722666699768" duration="21344000" />
+      <workItem from="1722760397393" duration="6687000" />
+      <workItem from="1722767099895" duration="5629000" />
+      <workItem from="1722779263237" duration="26000" />
+      <workItem from="1722779300114" duration="5342000" />
+      <workItem from="1722836970145" duration="4511000" />
+      <workItem from="1722841739953" duration="45000" />
+      <workItem from="1722841795870" duration="395000" />
+      <workItem from="1722842219191" duration="29409000" />
+    </task>
+    <task id="LOCAL-00001" summary="update README.md">
+      <option name="closed" value="true" />
+      <created>1722617801984</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722617801984</updated>
+    </task>
+    <task id="LOCAL-00002" summary="添加 Redis注册中心。存在Bug, 无法覆盖原来的redisClient Bean">
+      <option name="closed" value="true" />
+      <created>1722709773885</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722709773885</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修复redisClient相关Bug, 完成定时上报线程池功能">
+      <option name="closed" value="true" />
+      <created>1722794519365</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722794519366</updated>
+    </task>
+    <task id="LOCAL-00004" summary="修复redisClient相关Bug, 完成定时上报线程池功能">
+      <option name="closed" value="true" />
+      <created>1722837275000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722837275000</updated>
+    </task>
+    <task id="LOCAL-00005" summary="修复redisClient相关Bug, 完成定时上报线程池功能">
+      <option name="closed" value="true" />
+      <created>1722837336576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722837336576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update README.md" />
+    <MESSAGE value="添加 Redis注册中心。存在Bug, 无法覆盖原来的redisClient Bean" />
+    <MESSAGE value="修复redisClient相关Bug, 完成定时上报线程池功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复redisClient相关Bug, 完成定时上报线程池功能" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/origin/config/DynamicThreadPoolAutoConfig.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://D:/MavenRepository/org/redisson/redisson-spring-boot-starter/3.26.0/redisson-spring-boot-starter-3.26.0-sources.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/origin/config/DynamicThreadPoolAutoConfig.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/xfg/config/DynamicThreadPoolAutoConfig.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/xfg/config/DynamicThreadPoolAutoConfig.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-starter/src/main/java/site/notcoder/dtp/sdk/teststarter/config/TestAutoConfig.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test-starter/src/main/java/site/notcoder/dtp/sdk/teststarter/config/TestConfig.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cn-notcoder-test-starter/src/main/java/site/bugstack/cnnotcoderteststarter/TestConfig.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cn-test-starter/src/main/java/cn/notcoder/cnteststarter/TestConfig.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/nio/charset/MalformedInputException.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/nio/charset/CoderResult.java</url>
+          <line>273</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/sun/nio/cs/StreamDecoder.java</url>
+          <line>388</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.redisson.config.Config" memberName="transportMode" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="((java.util.concurrent.ConcurrentHashMap)((DefaultListableBeanFactory) beanFactory).allBeanNamesByType).entrySet().toArray()[8]" custom="java.util.concurrent.ConcurrentHashMap" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
