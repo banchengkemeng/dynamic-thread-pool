@@ -10,28 +10,8 @@ services:
     volumes:
       - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
     command: redis-server /usr/local/etc/redis/redis.conf
-    networks:
-      - my-network
     healthcheck:
       test: [ "CMD", "redis-cli", "ping" ]
       interval: 10s
       timeout: 5s
       retries: 3
-
-  redis-admin:
-    image: spryker/redis-commander:0.8.0
-    container_name: redis-admin
-    hostname: redis-commander
-    restart: always
-    ports:
-      - "8181:8081"
-    environment:
-      - REDIS_HOSTS=local:redis:6379
-    networks:
-      - my-network
-    depends_on:
-      redis:
-        condition: service_healthy
-networks:
-  my-network:
-    driver: bridge
