@@ -8,7 +8,6 @@ import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.model.vo.Check
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.model.vo.LoginVO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.model.vo.ResponseVO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.utils.AuthUtils;
-import io.micrometer.core.lang.Nullable;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

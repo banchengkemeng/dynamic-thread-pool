@@ -4,12 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="修复redisClient相关Bug, 完成定时上报线程池功能">
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" afterDir="false" />
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="完成订阅发布功能，初步完成Web接口">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/job/ThreadPoolDataReportJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/job/ThreadPoolDataReportJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigRefreshListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigRefreshListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/DynamicThreadPoolWebGlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/DynamicThreadPoolWebGlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/utils/AuthUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/utils/AuthUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +60,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://D:/MavenRepository/org/redisson/redisson-spring-boot-starter/3.26.0/redisson-spring-boot-starter-3.26.0-sources.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.java" root0="FORCE_HIGHLIGHTING" />
@@ -103,7 +113,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Debug",
+    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
@@ -120,6 +130,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "run.configurations.included.in.services": "true",
+    "service.view.auto.scroll.to.source": "true",
     "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   }
@@ -161,23 +172,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool">
-    <configuration name="DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dynamic-thread-pool-test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
-      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
-      <option name="METHOD_NAME" value="testDynamicThreadPoolRedisTopic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.DynamicThreadPoolTestApplication">
     <configuration name="DynamicThreadPoolTestApplicationTests.testThreadPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dynamic-thread-pool-test" />
       <extension name="coverage">
@@ -208,15 +203,13 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" />
       <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
       <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
         <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
-        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic" />
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +239,9 @@
       <workItem from="1722836970145" duration="4511000" />
       <workItem from="1722841739953" duration="45000" />
       <workItem from="1722841795870" duration="395000" />
-      <workItem from="1722842219191" duration="29409000" />
+      <workItem from="1722842219191" duration="29619000" />
+      <workItem from="1722928940020" duration="13655000" />
+      <workItem from="1723015697111" duration="2825000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -288,7 +283,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722837336576</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成订阅发布功能，初步完成Web接口">
+      <option name="closed" value="true" />
+      <created>1722878566579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722878566579</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,83 +312,10 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="添加 Redis注册中心。存在Bug, 无法覆盖原来的redisClient Bean" />
     <MESSAGE value="修复redisClient相关Bug, 完成定时上报线程池功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复redisClient相关Bug, 完成定时上报线程池功能" />
+    <MESSAGE value="完成订阅发布功能，初步完成Web接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成订阅发布功能，初步完成Web接口" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/origin/config/DynamicThreadPoolAutoConfig.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://D:/MavenRepository/org/redisson/redisson-spring-boot-starter/3.26.0/redisson-spring-boot-starter-3.26.0-sources.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/origin/config/DynamicThreadPoolAutoConfig.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/xfg/config/DynamicThreadPoolAutoConfig.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/site/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/xfg/config/DynamicThreadPoolAutoConfig.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-starter/src/main/java/site/notcoder/dtp/sdk/teststarter/config/TestAutoConfig.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-starter/src/main/java/site/notcoder/dtp/sdk/teststarter/config/TestConfig.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cn-notcoder-test-starter/src/main/java/site/bugstack/cnnotcoderteststarter/TestConfig.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cn-test-starter/src/main/java/cn/notcoder/cnteststarter/TestConfig.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/nio/charset/MalformedInputException.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/nio/charset/CoderResult.java</url>
-          <line>273</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/sun/nio/cs/StreamDecoder.java</url>
-          <line>388</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="org.redisson.config.Config" memberName="transportMode" />
@@ -394,6 +324,7 @@
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="((java.util.concurrent.ConcurrentHashMap)((DefaultListableBeanFactory) beanFactory).allBeanNamesByType).entrySet().toArray()[8]" custom="java.util.concurrent.ConcurrentHashMap" />
+        <watch expression="future" />
       </configuration>
     </watches-manager>
   </component>

@@ -62,7 +62,6 @@ public class RedisRegistry implements IRegistry {
 
     }
 
-
     // TODO 存在BUG
     private void reportThreadPoolRealProcess(
             List<ThreadPoolConfigEntity> threadPoolConfigEntityList,

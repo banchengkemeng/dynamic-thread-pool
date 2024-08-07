@@ -29,18 +29,21 @@ class DynamicThreadPoolTestApplicationTests {
 
     @Test
     void testThreadPool() throws Exception {
-        while (true) {
-            Random random = new Random();
-            int startDuration = random.nextInt(5) + 1;
-            int runDuration = random.nextInt(10) + 1;
 
-            threadPoolExecutor01.submit(() -> {
-                try {
-                    TimeUnit.SECONDS.sleep(startDuration);
-                    System.out.printf("启动花费时间: %ds\n", startDuration);
+        Thread t = new Thread(() -> {
+            try {
+                while (true) {
+                    Random random = new Random();
+                    int startDuration = random.nextInt(5) + 1;
+                    int runDuration = random.nextInt(10) + 1;
 
-                    TimeUnit.SECONDS.sleep(runDuration);
-                    System.out.printf("运行花费时间: %ds\n", runDuration);
+                    threadPoolExecutor01.submit(() -> {
+                        try {
+                            TimeUnit.SECONDS.sleep(startDuration);
+                            System.out.printf("启动花费时间: %ds\n", startDuration);
+
+                            TimeUnit.SECONDS.sleep(runDuration);
+                            System.out.printf("运行花费时间: %ds\n", runDuration);
 
 //                    List<ThreadPoolConfigEntity> threadPoolConfigEntities = dynamicThreadPoolService.queryThreadPoolList();
 //                    System.out.println(threadPoolConfigEntities);
@@ -55,13 +58,17 @@ class DynamicThreadPoolTestApplicationTests {
 //                                )
 //                        );
 //                    }
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            });
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    });
 
-            Thread.sleep((random.nextInt(10) + 1) * 1000);
-        }
+                    Thread.sleep((random.nextInt(10) + 1) * 1000);
+                }
+            } catch (Exception e) {}
+        });
+
+        t.start();
     }
 
     @Test

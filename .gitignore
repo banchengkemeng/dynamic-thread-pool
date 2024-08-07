@@ -36,3 +36,29 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### frontend ###
+# Logs
+dynamic-thread-pool-web-frontend/logs
+dynamic-thread-pool-web-frontend/*.log
+dynamic-thread-pool-web-frontend/npm-debug.log*
+dynamic-thread-pool-web-frontend/yarn-debug.log*
+dynamic-thread-pool-web-frontend/yarn-error.log*
+dynamic-thread-pool-web-frontend/pnpm-debug.log*
+dynamic-thread-pool-web-frontend/lerna-debug.log*
+
+dynamic-thread-pool-web-frontend/node_modules
+dynamic-thread-pool-web-frontend/dist
+dynamic-thread-pool-web-frontend/dist-ssr
+dynamic-thread-pool-web-frontend/*.local
+
+# Editor directories and files
+dynamic-thread-pool-web-frontend/.vscode/*
+dynamic-thread-pool-web-frontend/!.vscode/extensions.json
+dynamic-thread-pool-web-frontend/.idea
+dynamic-thread-pool-web-frontend/.DS_Store
+dynamic-thread-pool-web-frontend/*.suo
+dynamic-thread-pool-web-frontend/*.ntvs*
+dynamic-thread-pool-web-frontend/*.njsproj
+dynamic-thread-pool-web-frontend/*.sln
+dynamic-thread-pool-web-frontend/*.sw?

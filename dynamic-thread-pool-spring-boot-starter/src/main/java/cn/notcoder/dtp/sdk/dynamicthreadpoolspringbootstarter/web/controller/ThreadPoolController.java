@@ -3,6 +3,7 @@ package cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.controller;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.RefreshThreadPoolConfigDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.entity.ThreadPoolConfigEntity;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.utils.RedisUtils;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.exception.BusinessException;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.model.enums.ResponseEnum;
@@ -35,7 +36,6 @@ public class ThreadPoolController {
             throw new BusinessException(ResponseEnum.NO_AUTH);
         }
 
-        dynamicThreadPoolRefreshRedisTopic.publish(new RefreshThreadPoolConfigDTO());
         return ResponseVO.success(RedisUtils.getPoolConfigRList(redissonClient));
     }
 
@@ -47,7 +47,6 @@ public class ThreadPoolController {
             throw new BusinessException(ResponseEnum.NO_AUTH);
         }
 
-        dynamicThreadPoolRefreshRedisTopic.publish(new RefreshThreadPoolConfigDTO());
         ThreadPoolConfigEntity poolConfig = RedisUtils.getPoolConfigByPoolName(redissonClient, poolName);
         if (poolConfig == null) {
             throw new BusinessException(ResponseEnum.NOT_FOUNT, "未找到该线程池");
@@ -66,5 +65,14 @@ public class ThreadPoolController {
 
         dynamicThreadPoolAdjustRedisTopic.publish(updateThreadPoolConfigDTO);
         return ResponseVO.success(true, "成功发布线程池变更消息");
+    }
+
+    @GetMapping("/refresh")
+    public ResponseVO<Void> refreshThreadPoolConfigList(HttpServletRequest request) {
+        if (!AuthUtils.hashAuth(request)) {
+            throw new BusinessException(ResponseEnum.NO_AUTH);
+        }
+        dynamicThreadPoolRefreshRedisTopic.publish(new RefreshThreadPoolConfigDTO());
+        return ResponseVO.success(null);
     }
 }

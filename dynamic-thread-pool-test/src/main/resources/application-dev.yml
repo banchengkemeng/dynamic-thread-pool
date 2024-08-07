@@ -19,7 +19,7 @@ dynamic-thread-pool:
       host: 192.168.67.129
       port: 16379
       password: bancheng666..
-    report-cron: "0/60 * * * * ?"
+    report-cron: "0/10 * * * * ?"
   web:
     auth:
       enable: true

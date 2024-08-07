@@ -22,9 +22,19 @@ public class AuthUtils {
     }
 
     public static Boolean hashAuth(HttpServletRequest request) {
+        Object sessionAuthToken = request.getSession().getAttribute(SESSION_AUTH_KEY);
+        if (sessionAuthToken == null) {
+            return false;
+        }
+
+        String headerAuthToken = request.getHeader(AUTH_HEADER);
+        if (headerAuthToken == null) {
+            return false;
+        }
+
         return Objects.equals(
-                request.getSession().getAttribute(SESSION_AUTH_KEY),
-                request.getHeader(AUTH_HEADER)
+                sessionAuthToken,
+                headerAuthToken
         );
     }
 }

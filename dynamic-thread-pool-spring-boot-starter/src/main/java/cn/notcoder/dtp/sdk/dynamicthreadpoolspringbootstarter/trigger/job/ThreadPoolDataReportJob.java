@@ -21,7 +21,7 @@ public class ThreadPoolDataReportJob {
 
     private IRegistry registry;
 
-//    @Scheduled(cron = "${dynamic-thread-pool.registry.report-cron}")
+    @Scheduled(cron = "${dynamic-thread-pool.registry.report-cron}")
     public void reportThreadPoolData() {
         List<ThreadPoolConfigEntity> threadPoolConfigEntities = dynamicThreadPoolService.queryThreadPoolList();
         registry.reportThreadPool(threadPoolConfigEntities);
