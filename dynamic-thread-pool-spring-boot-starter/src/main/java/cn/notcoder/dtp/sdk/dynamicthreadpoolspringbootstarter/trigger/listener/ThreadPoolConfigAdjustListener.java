@@ -21,6 +21,9 @@ public class ThreadPoolConfigAdjustListener implements MessageListener<UpdateThr
     @Override
     public void onMessage(CharSequence charSequence, UpdateThreadPoolConfigDTO updateThreadPoolConfigDTO) {
         Boolean success = dynamicThreadPoolService.updateThreadPoolConfig(updateThreadPoolConfigDTO);
+        if (!success) {
+            log.warn("动态线程池, 配置变更结果: {}, 配置参数: {}", success, updateThreadPoolConfigDTO);
+        }
         log.info("动态线程池, 配置变更结果: {}, 配置参数: {}", success, updateThreadPoolConfigDTO);
 
         List<ThreadPoolConfigEntity> threadPoolConfigEntities = dynamicThreadPoolService.queryThreadPoolList();

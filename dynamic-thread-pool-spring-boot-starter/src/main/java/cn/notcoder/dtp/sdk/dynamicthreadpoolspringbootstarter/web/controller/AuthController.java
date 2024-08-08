@@ -16,12 +16,13 @@ import java.util.Objects;
 
 @RestController
 @RequestMapping(value = "${dynamic-thread-pool.web.context-path}/auth")
+@CrossOrigin(allowCredentials = "true", originPatterns = {"http://localhost*", "http://127.0.0.1*"})
 public class AuthController {
     @Resource
     private DynamicThreadPoolWebAutoProperties dynamicThreadPoolWebAutoProperties;
 
     @PostMapping("/login")
-    public ResponseVO<LoginVO> login(@RequestBody  LoginDTO loginDTO, HttpServletRequest request) {
+    public ResponseVO<LoginVO> login(@RequestBody LoginDTO loginDTO, HttpServletRequest request) {
         DynamicThreadPoolWebAutoProperties.Auth authConfig = dynamicThreadPoolWebAutoProperties.getAuth();
 
         String username = loginDTO.getUsername();
