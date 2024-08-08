@@ -62,3 +62,5 @@ dynamic-thread-pool-web-frontend/*.ntvs*
 dynamic-thread-pool-web-frontend/*.njsproj
 dynamic-thread-pool-web-frontend/*.sln
 dynamic-thread-pool-web-frontend/*.sw?
+
+standard/

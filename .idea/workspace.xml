@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="完成订阅发布功能，初步完成Web接口">
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端全部完成,前端初步搭建">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/job/ThreadPoolDataReportJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/job/ThreadPoolDataReportJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigRefreshListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigRefreshListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/DynamicThreadPoolWebGlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/exception/DynamicThreadPoolWebGlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/utils/AuthUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/utils/AuthUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,54 +75,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.ApiTest (1).executor": "Run",
-    "JUnit.ApiTest.executor": "Run",
-    "JUnit.ApiTest.testDynamicThreadPoolRedisTopic (1).executor": "Run",
-    "JUnit.ApiTest.testDynamicThreadPoolRedisTopic.executor": "Run",
-    "JUnit.DynamicThreadPoolTestApplicationTests.contextLoads.executor": "Run",
-    "JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic.executor": "Run",
-    "JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool.executor": "Run",
-    "Maven.cn-test-starter [clean].executor": "Run",
-    "Maven.cn-test-starter [install].executor": "Run",
-    "Maven.dynamic-thread-pool [clean].executor": "Run",
-    "Maven.dynamic-thread-pool [compile].executor": "Run",
-    "Maven.dynamic-thread-pool [install].executor": "Run",
-    "Maven.dynamic-thread-pool-spring-boot-starter [clean].executor": "Run",
-    "Maven.dynamic-thread-pool-spring-boot-starter [install].executor": "Run",
-    "Maven.dynamic-thread-pool-test [clean].executor": "Run",
-    "Maven.dynamic-thread-pool-test [compile].executor": "Run",
-    "Maven.test-starter [clean].executor": "Run",
-    "Maven.test-starter [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Run",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/dynamic-thread-pool",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "service.view.auto.scroll.to.source": "true",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.ApiTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.testDynamicThreadPoolRedisTopic (1).executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ApiTest.testDynamicThreadPoolRedisTopic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DynamicThreadPoolTestApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cn-test-starter [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.cn-test-starter [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool-spring-boot-starter [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool-spring-boot-starter [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool-test [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dynamic-thread-pool-test [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.test-starter [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.test-starter [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DynamicThreadPoolTestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/code/dynamic-thread-pool&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;service.view.auto.scroll.to.source&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\code\\dynamic-thread-pool\\dynamic-thread-pool-web-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -241,7 +230,8 @@
       <workItem from="1722841795870" duration="395000" />
       <workItem from="1722842219191" duration="29619000" />
       <workItem from="1722928940020" duration="13655000" />
-      <workItem from="1723015697111" duration="2825000" />
+      <workItem from="1723015697111" duration="3109000" />
+      <workItem from="1723096880438" duration="239000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -291,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722878566579</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="后端全部完成,前端初步搭建">
+      <option name="closed" value="true" />
+      <created>1723040610557</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1723040610557</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +311,8 @@
     <MESSAGE value="添加 Redis注册中心。存在Bug, 无法覆盖原来的redisClient Bean" />
     <MESSAGE value="修复redisClient相关Bug, 完成定时上报线程池功能" />
     <MESSAGE value="完成订阅发布功能，初步完成Web接口" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成订阅发布功能，初步完成Web接口" />
+    <MESSAGE value="后端全部完成,前端初步搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端全部完成,前端初步搭建" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
