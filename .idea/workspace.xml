@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端全部完成,前端初步搭建">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/model/dto/UpdateThreadPoolConfigDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/model/dto/UpdateThreadPoolConfigDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/model/entity/ThreadPoolConfigEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/model/entity/ThreadPoolConfigEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigAdjustListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/trigger/listener/ThreadPoolConfigAdjustListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/ThreadPoolController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/registry/redis/RedisRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/DynamicThreadPoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/DynamicThreadPoolServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/runner/ThreadPoolRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/runner/ThreadPoolRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/test/java/cn/notcoder/dtp/sdk/dynamicthreadpooltest/DynamicThreadPoolTestApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +61,8 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/lang/Thread.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/.jdks/corretto-19.0.2/lib/src.zip!/java.base/java/util/concurrent/LinkedBlockingQueue.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://D:/MavenRepository/org/redisson/redisson-spring-boot-starter/3.26.0/redisson-spring-boot-starter-3.26.0-sources.jar!/org/redisson/spring/starter/RedissonAutoConfiguration.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://D:/MavenRepository/org/redisson/redisson/3.26.0/redisson-3.26.0-sources.jar!/org/redisson/api/RList.java" root0="SKIP_INSPECTION" />
     <setting file="jar://D:/MavenRepository/org/springframework/spring-core/5.3.24/spring-core-5.3.24.jar!/org/springframework/cglib/proxy/MethodProxy.class" root0="FORCE_HIGHLIGHTING" />
@@ -88,6 +95,9 @@
     "JUnit.ApiTest.testDynamicThreadPoolRedisTopic (1).executor": "Run",
     "JUnit.ApiTest.testDynamicThreadPoolRedisTopic.executor": "Run",
     "JUnit.DynamicThreadPoolTestApplicationTests.contextLoads.executor": "Run",
+    "JUnit.DynamicThreadPoolTestApplicationTests.testAlarmService.executor": "Run",
+    "JUnit.DynamicThreadPoolTestApplicationTests.testAlarmStrategy.executor": "Debug",
+    "JUnit.DynamicThreadPoolTestApplicationTests.testDingAlarm.executor": "Run",
     "JUnit.DynamicThreadPoolTestApplicationTests.testDynamicThreadPoolRedisTopic.executor": "Run",
     "JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool.executor": "Run",
     "Maven.cn-test-starter [clean].executor": "Run",
@@ -107,7 +117,7 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Debug",
+    "Spring Boot.DynamicThreadPoolTestApplication.executor": "Run",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
@@ -168,6 +178,54 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DynamicThreadPoolTestApplication">
+    <configuration name="DynamicThreadPoolTestApplicationTests.testAlarmService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
+      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
+      <option name="METHOD_NAME" value="testAlarmService" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicThreadPoolTestApplicationTests.testAlarmStrategy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
+      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
+      <option name="METHOD_NAME" value="testAlarmStrategy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicThreadPoolTestApplicationTests.testDingAlarm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dynamic-thread-pool-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest" />
+      <option name="MAIN_CLASS_NAME" value="cn.notcoder.dtp.sdk.dynamicthreadpooltest.DynamicThreadPoolTestApplicationTests" />
+      <option name="METHOD_NAME" value="testDingAlarm" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DynamicThreadPoolTestApplicationTests.testThreadPool" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dynamic-thread-pool-test" />
       <extension name="coverage">
@@ -198,12 +256,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testAlarmService" />
+      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testAlarmStrategy" />
+      <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDingAlarm" />
       <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
       <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DynamicThreadPoolTestApplication" />
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testAlarmService" />
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testAlarmStrategy" />
+        <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testDingAlarm" />
         <item itemvalue="JUnit.DynamicThreadPoolTestApplicationTests.testThreadPool" />
       </list>
     </recent_temporary>
@@ -237,7 +301,9 @@
       <workItem from="1722842219191" duration="29619000" />
       <workItem from="1722928940020" duration="13655000" />
       <workItem from="1723015697111" duration="3109000" />
-      <workItem from="1723096880438" duration="11443000" />
+      <workItem from="1723096880438" duration="12799000" />
+      <workItem from="1724146441426" duration="5743000" />
+      <workItem from="1724466956119" duration="19968000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />

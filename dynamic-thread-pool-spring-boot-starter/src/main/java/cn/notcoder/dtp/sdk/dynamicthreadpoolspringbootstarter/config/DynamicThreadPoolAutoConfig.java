@@ -6,8 +6,9 @@ import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateTh
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.enums.RegistryEnum;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.IRegistry;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.redis.RedisRegistry;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IAlarmService;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
-import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.DynamicThreadPoolService;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.DynamicThreadPoolServiceImpl;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.job.ThreadPoolDataReportJob;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.listener.ThreadPoolConfigAdjustListener;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.listener.ThreadPoolConfigRefreshListener;
@@ -38,7 +39,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Configuration
 @EnableConfigurationProperties(DynamicThreadPoolRegistryRedisAutoProperties.class)
 @EnableScheduling
-@ImportAutoConfiguration(DynamicThreadPoolWebAutoConfig.class)
+@ImportAutoConfiguration({DynamicThreadPoolWebAutoConfig.class, DynamicThreadPoolAlarmAutoConfig.class})
 public class DynamicThreadPoolAutoConfig {
 
     @Bean
@@ -62,14 +63,14 @@ public class DynamicThreadPoolAutoConfig {
     }
 
     @Bean
-    public IRegistry redisRegistry(RedissonClient redissonClient) {
-        return new RedisRegistry(redissonClient);
+    public IRegistry redisRegistry(RedissonClient redissonClient, IAlarmService alarmService) {
+        return new RedisRegistry(redissonClient, alarmService);
     }
 
     @Bean
     public ThreadPoolDataReportJob threadPoolDataReportJob(
             IDynamicThreadPoolService dynamicThreadPoolService,
-            IRegistry redisRegistry ) {
+            IRegistry redisRegistry) {
         return new ThreadPoolDataReportJob(dynamicThreadPoolService, redisRegistry);
     }
 
@@ -77,7 +78,7 @@ public class DynamicThreadPoolAutoConfig {
     @Bean
     public ThreadPoolConfigAdjustListener threadPoolConfigAdjustListener(
             IDynamicThreadPoolService dynamicThreadPoolService,
-            IRegistry redisRegistry ) {
+            IRegistry redisRegistry) {
         return new ThreadPoolConfigAdjustListener(dynamicThreadPoolService, redisRegistry);
     }
 
@@ -85,7 +86,7 @@ public class DynamicThreadPoolAutoConfig {
     @Bean
     public RTopic dynamicThreadPoolAdjustRedisTopic(
             ThreadPoolConfigAdjustListener threadPoolConfigAdjustListener,
-            RedissonClient redissonClient ) {
+            RedissonClient redissonClient) {
         RTopic topic = redissonClient.getTopic(RegistryEnum.DYNAMIC_THREAD_POOL_ADJUST_REDIS_TOPIC_KEY.getKey());
         topic.addListener(UpdateThreadPoolConfigDTO.class, threadPoolConfigAdjustListener);
         return topic;
@@ -94,7 +95,7 @@ public class DynamicThreadPoolAutoConfig {
     @Bean
     public ThreadPoolConfigRefreshListener threadPoolConfigRefreshListener(
             IDynamicThreadPoolService dynamicThreadPoolService,
-            IRegistry redisRegistry ) {
+            IRegistry redisRegistry) {
         return new ThreadPoolConfigRefreshListener(dynamicThreadPoolService, redisRegistry);
     }
 
@@ -108,10 +109,11 @@ public class DynamicThreadPoolAutoConfig {
     }
 
     @Bean
-    public DynamicThreadPoolService dynamicThreadPoolService(
+    public DynamicThreadPoolServiceImpl dynamicThreadPoolService(
             ApplicationContext applicationContext,
             Map<String, ThreadPoolExecutor> threadPoolExecutorMap,
-            RedissonClient redissonClient
+            RedissonClient redissonClient,
+            IAlarmService alarmService
     ) {
         String applicationName = ApplicationUtils.getApplicationName(applicationContext);
         if (StringUtils.isBlank(applicationName)) {
@@ -119,7 +121,11 @@ public class DynamicThreadPoolAutoConfig {
         }
 
         // 创建Bean
-        DynamicThreadPoolService dynamicThreadPoolService = new DynamicThreadPoolService(applicationName, threadPoolExecutorMap);
+        DynamicThreadPoolServiceImpl dynamicThreadPoolService = new DynamicThreadPoolServiceImpl(
+                applicationName,
+                threadPoolExecutorMap,
+                alarmService
+        );
 
         // 获取缓存的配置信息，配置线程池
         threadPoolExecutorMap.forEach((poolName, executor) -> {
@@ -132,9 +138,11 @@ public class DynamicThreadPoolAutoConfig {
                 return;
             }
 
+
             dynamicThreadPoolService.updateThreadPoolConfig(
                     updateThreadPoolConfigDTO
             );
+
         });
 
         return dynamicThreadPoolService;

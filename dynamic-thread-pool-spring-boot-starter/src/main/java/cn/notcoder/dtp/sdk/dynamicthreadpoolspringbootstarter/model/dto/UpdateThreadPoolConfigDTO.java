@@ -13,6 +13,7 @@ public class UpdateThreadPoolConfigDTO {
     private String threadPoolName;
     private Integer corePoolSize;
     private Integer maximumPoolSize;
+    private Integer queueCapacity;
 
     public static UpdateThreadPoolConfigDTO buildUpdateThreadPoolConfigDTO(
             ThreadPoolConfigEntity threadPoolConfigEntity ) {
@@ -20,7 +21,8 @@ public class UpdateThreadPoolConfigDTO {
                 threadPoolConfigEntity.getApplicationName(),
                 threadPoolConfigEntity.getThreadPoolName(),
                 threadPoolConfigEntity.getCorePoolSize(),
-                threadPoolConfigEntity.getMaximumPoolSize()
+                threadPoolConfigEntity.getMaximumPoolSize(),
+                threadPoolConfigEntity.getQueueSize() + threadPoolConfigEntity.getRemainingCapacity()
         );
     }
 }

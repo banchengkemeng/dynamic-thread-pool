@@ -26,3 +26,9 @@ dynamic-thread-pool:
       username: dtp
       password: dtp
     context-path: /dtp
+  alarm:
+    enable: true
+    access-token:
+      ding-ding: 13b22f8864df3948d90b561cf70f5099c694b86a3a0f6d8ffe3cf9448ae813ab
+    use-platform:
+      - "DingDing"

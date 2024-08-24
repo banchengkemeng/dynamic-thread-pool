@@ -54,7 +54,6 @@ public class ThreadPoolRunner implements ApplicationRunner {
                 }
             } catch (Exception e) {}
         });
-
         t.start();
     }
 }

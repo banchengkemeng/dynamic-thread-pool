@@ -1,9 +1,12 @@
 package cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.redis;
 
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.AlarmMessageDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.entity.ThreadPoolConfigEntity;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.enums.RegistryEnum;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.IRegistry;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IAlarmService;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.AlarmServiceImpl;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.utils.RedisUtils;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,11 +28,18 @@ public class RedisRegistry implements IRegistry {
 
     private RedissonClient redissonClient;
 
+    private IAlarmService alarmService;
+
     @Override
     public void reportThreadPool(List<ThreadPoolConfigEntity> threadPoolConfigEntityList) {
         if (threadPoolConfigEntityList == null || threadPoolConfigEntityList.isEmpty()) {
             return;
         }
+
+        if (AlarmServiceImpl.canSendForThreadPoolDanger()) {
+            alarmService.sendIfThreadPoolHasDanger(threadPoolConfigEntityList);
+        }
+
 
         RList<ThreadPoolConfigEntity> list = RedisUtils.getPoolConfigRList(redissonClient);
         if (list.isEmpty()) {
@@ -46,7 +56,11 @@ public class RedisRegistry implements IRegistry {
                 reportThreadPoolRealProcess(threadPoolConfigEntityList, list);
             }
         } catch (Exception e) {
-            // TODO 告警
+            alarmService.send(
+                    AlarmMessageDTO
+                            .buildAlarmMessageDTO("上报线程池列表出错")
+                            .appendParameter("错误原因", e.toString())
+            );
             log.error("动态线程池, 上报线程池列表时出现错误: {}", e.toString());
         } finally {
             lock.unlock();
@@ -62,7 +76,6 @@ public class RedisRegistry implements IRegistry {
 
     }
 
-    // TODO 存在BUG
     private void reportThreadPoolRealProcess(
             List<ThreadPoolConfigEntity> threadPoolConfigEntityList,
             RList<ThreadPoolConfigEntity> list ) {

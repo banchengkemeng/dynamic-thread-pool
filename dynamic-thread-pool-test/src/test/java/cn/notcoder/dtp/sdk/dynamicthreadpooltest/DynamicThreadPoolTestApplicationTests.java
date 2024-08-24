@@ -1,17 +1,29 @@
 package cn.notcoder.dtp.sdk.dynamicthreadpooltest;
 
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.config.properties.DynamicThreadPoolAlarmAutoProperties;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.AlarmMessageDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IAlarmService;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.strategy.alarm.AbstractAlarmStrategy;
+import com.dingtalk.api.DefaultDingTalkClient;
+import com.dingtalk.api.DingTalkClient;
+import com.dingtalk.api.request.OapiRobotSendRequest;
+import com.dingtalk.api.response.OapiRobotSendResponse;
+import com.taobao.api.ApiException;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.redisson.api.RTopic;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Random;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 @SpringBootTest
+@Slf4j
 class DynamicThreadPoolTestApplicationTests {
 
     @Resource
@@ -22,6 +34,12 @@ class DynamicThreadPoolTestApplicationTests {
 
     @Resource
     private RTopic dynamicThreadPoolAdjustRedisTopic;
+
+    @Resource
+    private DynamicThreadPoolAlarmAutoProperties dynamicThreadPoolAlarmAutoProperties;
+
+    @Resource
+    private IAlarmService alarmService;
 
     @Test
     void contextLoads() {
@@ -65,7 +83,8 @@ class DynamicThreadPoolTestApplicationTests {
 
                     Thread.sleep((random.nextInt(10) + 1) * 1000);
                 }
-            } catch (Exception e) {}
+            } catch (Exception e) {
+            }
         });
 
         t.start();
@@ -81,7 +100,8 @@ class DynamicThreadPoolTestApplicationTests {
                                 "dynamic-thread-pool-1",
                                 "threadPoolExecutor01",
                                 i,
-                                i + 10
+                                i + 10,
+                                50
                         )
                 );
             }
@@ -94,7 +114,8 @@ class DynamicThreadPoolTestApplicationTests {
                                 "dynamic-thread-pool-1",
                                 "threadPoolExecutor02",
                                 i,
-                                i + 10
+                                i + 10,
+                                50
                         )
                 );
             }
@@ -107,7 +128,8 @@ class DynamicThreadPoolTestApplicationTests {
                                 "dynamic-thread-pool-2",
                                 "threadPoolExecutor01",
                                 i,
-                                i + 10
+                                i + 10,
+                                50
                         )
                 );
             }
@@ -120,7 +142,8 @@ class DynamicThreadPoolTestApplicationTests {
                                 "dynamic-thread-pool-2",
                                 "threadPoolExecutor02",
                                 i,
-                                i + 10
+                                i + 10,
+                                50
                         )
                 );
             }
@@ -129,4 +152,58 @@ class DynamicThreadPoolTestApplicationTests {
 
     }
 
+    @Test
+    void testDingAlarm() throws ApiException {
+        final String CUSTOM_ROBOT_TOKEN = dynamicThreadPoolAlarmAutoProperties.getAccessToken().getDingDing();
+
+        //sign字段和timestamp字段必须拼接到请求URL上，否则会出现 310000 的错误信息
+        DingTalkClient client = new DefaultDingTalkClient("https://oapi.dingtalk.com/robot/send");
+        OapiRobotSendRequest req = new OapiRobotSendRequest();
+        /**
+         * 发送文本消息
+         */
+        //定义文本内容
+        OapiRobotSendRequest.Text text = new OapiRobotSendRequest.Text();
+        text.setContent("【监控告警】 hello\n 123456");
+
+        //定义 @ 对象
+        OapiRobotSendRequest.At at = new OapiRobotSendRequest.At();
+        at.setIsAtAll(true);
+
+        //设置消息类型
+        req.setMsgtype("text");
+        req.setText(text);
+        req.setAt(at);
+        OapiRobotSendResponse rsp = client.execute(req, CUSTOM_ROBOT_TOKEN);
+
+        System.out.println(rsp.getBody());
+    }
+
+    @Test
+    void testAlarmStrategy() {
+
+        List<AbstractAlarmStrategy> alarmStrategies = AbstractAlarmStrategy.selectStrategy(
+                dynamicThreadPoolAlarmAutoProperties.getUsePlatform()
+        );
+        AlarmMessageDTO alarmMessageDTO = AlarmMessageDTO.buildAlarmMessageDTO("线程池状态异常")
+                .appendParameter("测试", 1);
+
+        alarmStrategies.forEach(strategy -> {
+            try {
+                strategy.send(alarmMessageDTO);
+            } catch (ApiException e) {
+                log.error("告警推送失败: {} | {}", e.getErrCode(), e.getErrMsg());
+            }
+
+        });
+    }
+
+    @Test
+    void testAlarmService() {
+        alarmService.send(
+                AlarmMessageDTO
+                        .buildAlarmMessageDTO("线程池状态异常")
+                        .appendParameter("测试", 1)
+        );
+    }
 }

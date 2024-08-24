@@ -1,7 +1,10 @@
 package cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl;
 
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.AlarmMessageDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.dto.UpdateThreadPoolConfigDTO;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.entity.ThreadPoolConfigEntity;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.hook.ResizableCapacityLinkedBlockingQueue;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IAlarmService;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -9,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -17,11 +21,13 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 @Slf4j
 @AllArgsConstructor
-public class DynamicThreadPoolService implements IDynamicThreadPoolService {
+public class DynamicThreadPoolServiceImpl implements IDynamicThreadPoolService {
 
     private String applicationName;
 
     private Map<String, ThreadPoolExecutor> threadPoolExecutorMap;
+
+    private IAlarmService alarmService;
 
     @Override
     public List<ThreadPoolConfigEntity> queryThreadPoolList() {
@@ -67,7 +73,13 @@ public class DynamicThreadPoolService implements IDynamicThreadPoolService {
         Integer maximumPoolSize = updateThreadPoolConfigDTO.getMaximumPoolSize();
         // CorePoolSize 小于等于 MaximumPoolSize, 否则发出告警
         if (maximumPoolSize < corePoolSize) {
-            // TODO 告警
+            alarmService.send(
+                    AlarmMessageDTO
+                            .buildAlarmMessageDTO("变更配置出错")
+                            .appendParameter("错误原因", "最大线程数小于核心线程数")
+                            .appendParameter("最大线程数", maximumPoolSize)
+                            .appendParameter("核心线程数", corePoolSize)
+            );
             log.error("动态线程池, 变更配置时出错(最大线程数小于核心线程数): {}", updateThreadPoolConfigDTO);
             return false;
         }
@@ -81,6 +93,13 @@ public class DynamicThreadPoolService implements IDynamicThreadPoolService {
             threadPoolExecutor.setCorePoolSize(updateThreadPoolConfigDTO.getCorePoolSize());
         }
 
+        // 变更阻塞队列的大小
+        ResizableCapacityLinkedBlockingQueue queue =
+                (ResizableCapacityLinkedBlockingQueue) threadPoolExecutor.getQueue();
+        queue.setCapacity(updateThreadPoolConfigDTO.getQueueCapacity());
+
+        // 可再次推送告警
+        AlarmServiceImpl.setCanSendForThreadPoolDanger(true);
         return true;
     }
 }

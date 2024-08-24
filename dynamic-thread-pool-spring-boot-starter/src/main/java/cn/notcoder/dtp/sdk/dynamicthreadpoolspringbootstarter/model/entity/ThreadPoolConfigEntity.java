@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -45,6 +46,7 @@ public class ThreadPoolConfigEntity {
             String applicationName,
             String threadPoolName,
             ThreadPoolExecutor executor) {
+
         return new ThreadPoolConfigEntity(
                 applicationName,
                 threadPoolName,

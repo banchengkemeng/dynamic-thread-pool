@@ -1,5 +1,6 @@
 package cn.notcoder.dtp.sdk.dynamicthreadpooltest.config;
 
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.model.hook.ResizableCapacityLinkedBlockingQueue;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -8,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import cn.notcoder.dtp.sdk.dynamicthreadpooltest.config.propertis.ThreadPoolConfigAutoProperties;
 
 import java.util.concurrent.*;
+
 
 @Slf4j
 @EnableAsync
@@ -22,7 +24,7 @@ public class ThreadPoolConfig {
                 properties.getMaxPoolSize(),
                 properties.getKeepAliveTime(),
                 TimeUnit.SECONDS,
-                new LinkedBlockingQueue<>(properties.getBlockQueueSize()),
+                new ResizableCapacityLinkedBlockingQueue<>(properties.getBlockQueueSize()),
                 Executors.defaultThreadFactory(),
                 getRejectedExecutionHandler(properties.getPolicy())
         );
@@ -35,7 +37,7 @@ public class ThreadPoolConfig {
                 properties.getMaxPoolSize(),
                 properties.getKeepAliveTime(),
                 TimeUnit.SECONDS,
-                new LinkedBlockingQueue<>(properties.getBlockQueueSize()),
+                new ResizableCapacityLinkedBlockingQueue<>(properties.getBlockQueueSize()),
                 Executors.defaultThreadFactory(),
                 getRejectedExecutionHandler(properties.getPolicy())
         );
