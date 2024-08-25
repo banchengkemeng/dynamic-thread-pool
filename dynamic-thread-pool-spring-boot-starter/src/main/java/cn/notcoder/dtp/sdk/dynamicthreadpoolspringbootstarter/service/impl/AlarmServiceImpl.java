@@ -30,7 +30,7 @@ public class AlarmServiceImpl implements IAlarmService {
     public void send(AlarmMessageDTO message) {
         log.info("告警推送: {}", message);
 
-        Boolean enable = config.getEnable();
+        Boolean enable = config.getEnabled();
         if (!enable) {
             log.info("告警推送未开启");
             return;

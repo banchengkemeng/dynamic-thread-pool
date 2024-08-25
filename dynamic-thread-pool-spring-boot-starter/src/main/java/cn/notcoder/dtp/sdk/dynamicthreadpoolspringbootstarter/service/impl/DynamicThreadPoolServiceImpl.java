@@ -12,6 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 
@@ -56,6 +57,10 @@ public class DynamicThreadPoolServiceImpl implements IDynamicThreadPoolService {
     @Override
     public Boolean updateThreadPoolConfig(UpdateThreadPoolConfigDTO updateThreadPoolConfigDTO) {
         if (updateThreadPoolConfigDTO == null) {
+            return false;
+        }
+
+        if (!Objects.equals(updateThreadPoolConfigDTO.getApplicationName(), applicationName)) {
             return false;
         }
 

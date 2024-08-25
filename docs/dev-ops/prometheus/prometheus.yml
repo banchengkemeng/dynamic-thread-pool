@@ -1,0 +1,22 @@
+global:
+  scrape_interval:     15s # 默认情况下，每 15s 采集一次目标数据
+
+  # 与外部系统(如 federation, remote storage, Alertmanager)通信时，可以将这些标签应用到到和时间序列或告警上
+  external_labels:
+    monitor: 'codelab-monitor'
+
+# 仅包含一个采集端点的采集配置：这里是 Prometheus 本身
+scrape_configs:
+  # 作业名称作为标签 `job=<job_name>` 添加到从此配置中采集的时间序列上
+  - job_name: 'prometheus'
+
+    # 覆盖全局默认的参数，并将采样时间间隔设置为 5s
+    scrape_interval: 5s
+
+    static_configs:
+      - targets: ['localhost:9090']
+  - job_name: 'dynamic-thread-pool'
+    scrape_interval: 5s
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['192.168.67.1:8091', '192.168.67.1:8092']

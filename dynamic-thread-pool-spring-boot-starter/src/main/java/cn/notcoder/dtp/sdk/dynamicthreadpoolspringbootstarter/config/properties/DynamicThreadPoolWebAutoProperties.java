@@ -20,7 +20,7 @@ public class DynamicThreadPoolWebAutoProperties {
     /**
      * 权限认证
      */
-    private Auth auth;
+    private Auth auth = new Auth();
 
     @Data
     @NoArgsConstructor

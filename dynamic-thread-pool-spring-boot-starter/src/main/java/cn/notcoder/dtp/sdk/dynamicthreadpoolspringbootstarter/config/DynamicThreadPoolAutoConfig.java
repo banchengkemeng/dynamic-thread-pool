@@ -8,12 +8,17 @@ import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.IRegistry
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.registry.redis.RedisRegistry;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IAlarmService;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.IDynamicThreadPoolService;
+import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.AlarmServiceImpl;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.service.impl.DynamicThreadPoolServiceImpl;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.job.ThreadPoolDataReportJob;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.listener.ThreadPoolConfigAdjustListener;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.trigger.listener.ThreadPoolConfigRefreshListener;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.utils.ApplicationUtils;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.utils.RedisUtils;
+import io.micrometer.core.instrument.Meter;
+import io.micrometer.core.instrument.config.MeterFilter;
+import io.micrometer.core.instrument.config.MeterFilterReply;
+import io.micrometer.core.instrument.distribution.DistributionStatisticConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.redisson.Redisson;
@@ -21,6 +26,10 @@ import org.redisson.api.RTopic;
 import org.redisson.api.RedissonClient;
 import org.redisson.codec.JsonJacksonCodec;
 import org.redisson.config.Config;
+import org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties;
+import org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties;
+import org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus.PrometheusMetricsExportAutoConfiguration;
+import org.springframework.boot.actuate.autoconfigure.metrics.export.prometheus.PrometheusProperties;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
@@ -28,7 +37,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ThreadPoolExecutor;
 
 
@@ -146,5 +155,38 @@ public class DynamicThreadPoolAutoConfig {
         });
 
         return dynamicThreadPoolService;
+    }
+
+    @Bean
+    public PrometheusConfigRunner prometheusConfigRunner(
+            ApplicationContext applicationContext,
+            WebEndpointProperties webEndpointProperties,
+            PrometheusProperties prometheusProperties
+    ) {
+        webEndpointProperties.getExposure().setInclude(
+                new HashSet<>(Arrays.asList(
+                        "health",
+                        "prometheus"
+                ))
+        );
+
+        prometheusProperties.setEnabled(true);
+
+        return new PrometheusConfigRunner(
+                applicationContext
+        );
+    }
+
+    @Bean
+    public MeterFilter customMeterFilter() {
+        return new MeterFilter() {
+            @Override
+            public MeterFilterReply accept(Meter.Id id) {
+                if (id.getName().contains("thread_pool")) {
+                    return MeterFilterReply.ACCEPT;
+                }
+                return MeterFilterReply.DENY;
+            }
+        };
     }
 }

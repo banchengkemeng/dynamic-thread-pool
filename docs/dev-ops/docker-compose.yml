@@ -15,3 +15,19 @@ services:
       interval: 10s
       timeout: 5s
       retries: 3
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    restart: always
+    hostname: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    restart: always
+    hostname: grafana
+    ports:
+      - "3000:3000"

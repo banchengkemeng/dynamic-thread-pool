@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: dynamic-thread-pool-test-two
+  profiles:
+    active: dev
+server:
+  port: 8081

@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 8092
 
 # 线程池配置
 thread:
@@ -20,13 +20,6 @@ dynamic-thread-pool:
       port: 16379
       password: bancheng666..
     report-cron: "0/10 * * * * ?"
-  web:
-    auth:
-      enable: true
-      username: dtp
-      password: dtp
-    context-path: /dtp
-    enabled: true
   alarm:
     enabled: true
     access-token:

@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @ConfigurationProperties(prefix = "dynamic-thread-pool.alarm")
 public class DynamicThreadPoolAlarmAutoProperties {
-    private Boolean enable = false;
+    private Boolean enabled = false;
     private List<String > usePlatform;
     private AccessToken accessToken;
 

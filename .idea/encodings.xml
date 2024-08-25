@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-thread-pool-test-two/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dynamic-thread-pool-test-two/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dynamic-thread-pool-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/assembly/resources" charset="UTF-8" />

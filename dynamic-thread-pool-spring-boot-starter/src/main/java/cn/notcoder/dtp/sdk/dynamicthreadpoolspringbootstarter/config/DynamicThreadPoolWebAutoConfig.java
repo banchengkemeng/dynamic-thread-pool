@@ -6,9 +6,11 @@ import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.controller.Aut
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.controller.SettingsController;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.controller.ThreadPoolController;
 import cn.notcoder.dtp.sdk.dynamicthreadpoolspringbootstarter.web.exception.DynamicThreadPoolWebGlobalExceptionHandler;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
+@ConditionalOnProperty(prefix = "dynamic-thread-pool.web", name = "enabled", havingValue = "true")
 @EnableConfigurationProperties(DynamicThreadPoolWebAutoProperties.class)
 public class DynamicThreadPoolWebAutoConfig {
     @Bean
