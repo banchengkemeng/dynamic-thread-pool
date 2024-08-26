@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端优化：增加告警机制">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端优化：整合监控 Prometheus+Grafana">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAlarmAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAlarmAutoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolAlarmAutoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolAlarmAutoProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/AlarmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/AlarmServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/DynamicThreadPoolServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/service/impl/DynamicThreadPoolServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +117,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/dynamic-thread-pool/dynamic-thread-pool-test-two/src/main/java/cn/notcoder/dynamicthreadpooltesttwo",
+    "last_opened_file_path": "E:/code/dynamic-thread-pool/dynamic-thread-pool-spring-boot-starter/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -148,11 +138,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources\web" />
+      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources\static" />
+      <recent name="E:\code\dynamic-thread-pool\docs\dev-ops\grafana" />
       <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test-two\src\main\java\cn\notcoder\dynamicthreadpooltesttwo" />
-      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test-two\src\main\resources" />
-      <recent name="E:\code\dynamic-thread-pool\cn-test-starter\src\main" />
-      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\java\site\notcoder\dtp\sdk\dynamicthreadpoolspringbootstarter" />
-      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code\dynamic-thread-pool\docs\dev-ops\prometheus" />
@@ -181,7 +171,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DynamicThreadPoolTestTwoApplication">
+  <component name="RunManager" selected="Spring Boot.DynamicThreadPoolTestApplication">
     <configuration name="DynamicThreadPoolTestApplicationTests.testAlarmService" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dynamic-thread-pool-test" />
       <extension name="coverage">
@@ -316,7 +306,8 @@
       <workItem from="1723096880438" duration="12799000" />
       <workItem from="1724146441426" duration="5743000" />
       <workItem from="1724466956119" duration="21028000" />
-      <workItem from="1724554131889" duration="18199000" />
+      <workItem from="1724554131889" duration="18932000" />
+      <workItem from="1724637125950" duration="26381000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -382,11 +373,22 @@
       <option name="project" value="LOCAL" />
       <updated>1724504225362</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="后端优化：整合监控 Prometheus+Grafana">
+      <option name="closed" value="true" />
+      <created>1724598091267</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724598091267</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="nginx.conf" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -409,7 +411,8 @@
     <MESSAGE value="完成订阅发布功能，初步完成Web接口" />
     <MESSAGE value="后端全部完成,前端初步搭建" />
     <MESSAGE value="后端优化：增加告警机制" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端优化：增加告警机制" />
+    <MESSAGE value="后端优化：整合监控 Prometheus+Grafana" />
+    <option name="LAST_COMMIT_MESSAGE" value="后端优化：整合监控 Prometheus+Grafana" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
