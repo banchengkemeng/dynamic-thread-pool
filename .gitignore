@@ -64,3 +64,6 @@ dynamic-thread-pool-web-frontend/*.sln
 dynamic-thread-pool-web-frontend/*.sw?
 
 standard/
+
+documents/
+imgs/

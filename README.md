@@ -1,6 +1,19 @@
 # 动态线程池组件
 # 项目介绍
 
+## 预览
+
+![image-20240827115452285](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115452285.png)
+
+![image-20240827115504869](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115504869.png)
+
+![image-20240827115515976](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115515976.png)
+
+![image-20240827115538458](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115538458.png)
+
+![image-20240827123325986](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827123325986.png)
+
+
 ## Web管理界面
 
 所有引入 starter 的项目中，有一个节点是 master, 只有master 会注入 web管理端的 bean (当时感觉这样比较方便，做到后面感觉不如单独抽出一个管理系统的项目来)
@@ -94,7 +107,7 @@ dynamic-thread-pool:
 
 4. 创建组织，组织名为 `docs/dev-ops/grafana/grafana.ini` 中的 `org_name`
 
-   ![image-20240827112413363](https://dtp-pictures.oss-cn-beijing.aliyuncs.com//image-20240827112413363.png)
+   ![image-20240827112413363](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112413363.png)
 
    ![image-20240827112432470](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112432470.png)
 
