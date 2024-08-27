@@ -4,45 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端优化：整合监控 Prometheus+Grafana">
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112236524.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112258325.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112413363.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112432470.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112632390.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112756189.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112807222.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112846450.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112852251.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112932519.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113012125.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113317054.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113334430.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113525322.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113609897.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113703821.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114120358.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114149066.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114451399.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114913775.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115050494.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115452285.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115504869.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115515976.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115538458.png" afterDir="false" />
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="收尾,README.md更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/~$动态线程池组件.drawio.bkp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/~$动态线程池组件.drawio.dtmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件-BUG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件-BUG.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件.drawio" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/model/vo/SettingsVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/model/vo/SettingsVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/resources/web/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -344,7 +308,7 @@
       <workItem from="1724637125950" duration="27248000" />
       <workItem from="1724681452266" duration="24000" />
       <workItem from="1724681487791" duration="1077000" />
-      <workItem from="1724725223658" duration="6614000" />
+      <workItem from="1724725223658" duration="7226000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -418,7 +382,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724598091267</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="收尾,README.md更新">
+      <option name="closed" value="true" />
+      <created>1724732357468</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724732357468</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +421,8 @@
     <MESSAGE value="后端全部完成,前端初步搭建" />
     <MESSAGE value="后端优化：增加告警机制" />
     <MESSAGE value="后端优化：整合监控 Prometheus+Grafana" />
-    <option name="LAST_COMMIT_MESSAGE" value="后端优化：整合监控 Prometheus+Grafana" />
+    <MESSAGE value="收尾,README.md更新" />
+    <option name="LAST_COMMIT_MESSAGE" value="收尾,README.md更新" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

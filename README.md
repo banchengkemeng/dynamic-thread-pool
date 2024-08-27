@@ -94,50 +94,50 @@ dynamic-thread-pool:
 
 4. 创建组织，组织名为 `docs/dev-ops/grafana/grafana.ini` 中的 `org_name`
 
-   ![image-20240827112413363](imgs\image-20240827112413363.png)
+   ![image-20240827112413363](https://dtp-pictures.oss-cn-beijing.aliyuncs.com//image-20240827112413363.png)
 
-   ![image-20240827112432470](imgs\image-20240827112432470.png)
+   ![image-20240827112432470](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112432470.png)
 
 5. 切换组织到新创建的组织，如何切换的时候出现一直自动重定向到 localhost, 把url里的org参数删除然后重新访问 http://host:3000 即可，或者修改 grafana 的配置文件 (自查)
 
-   ![image-20240827112632390](imgs\image-20240827112632390.png)
+   ![image-20240827112632390](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112632390.png)
 
 6. 创建datasource (prometheus)
 
-   ![image-20240827112756189](imgs\image-20240827112756189.png)
+   ![image-20240827112756189](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112756189.png)
 
-   ![image-20240827112807222](imgs\image-20240827112807222.png)
+   ![image-20240827112807222](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112807222.png)
 
-   ![image-20240827112852251](imgs\image-20240827112852251.png)
+   ![image-20240827112852251](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112852251.png)
 
-   ![image-20240827112932519](imgs\image-20240827112932519.png)
+   ![image-20240827112932519](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827112932519.png)
 
-   ![image-20240827113012125](imgs\image-20240827113012125.png)
+   ![image-20240827113012125](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113012125.png)
 
 7. 创建 dashboard
 
-   ![image-20240827113317054](imgs\image-20240827113317054.png)
+   ![image-20240827113317054](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113317054.png)
 
-   ![image-20240827113334430](imgs\image-20240827113334430.png)
+   ![image-20240827113334430](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113334430.png)
 
-   ![image-20240827113609897](imgs\image-20240827113609897.png)
+   ![image-20240827113609897](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113609897.png)
 
-   ![image-20240827113525322](imgs\image-20240827113525322.png)
+   ![image-20240827113525322](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113525322.png)
 
-   ![image-20240827113703821](imgs\image-20240827113703821.png)
+   ![image-20240827113703821](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827113703821.png)
 
-   ![image-20240827114120358](imgs\image-20240827114120358.png)
+   ![image-20240827114120358](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827114120358.png)
 
    删除掉from参数和to参数，每次就会自动选择 last 6 hours, 而不是固定区间，体验会好一些
 
-   ![image-20240827114451399](imgs\image-20240827114451399.png)
+   ![image-20240827114451399](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827114451399.png)
 
 ## 3. 钉钉配置
 
 1. 创建一个群组，设置 => 机器人 => 添加机器人 => 自定义
 
-   ![image-20240827114913775](imgs\image-20240827114913775.png)
+   ![image-20240827114913775](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827114913775.png)
 
 2. 复制机器人url，有个access_token 参数，把它写到 application 配置文件里  | 可以配置关键词，配置之后，推送的消息中必须包含所配置的关键词，否则不予推送
 
-   ![image-20240827115050494](imgs\image-20240827115050494.png)
+   ![image-20240827115050494](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115050494.png)
