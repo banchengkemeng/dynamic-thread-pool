@@ -18,6 +18,9 @@ public class SettingsController {
 
     @GetMapping("/settingsLZQGJPUFNS")
     public ResponseVO<SettingsVO> settings() {
-        return ResponseVO.success(new SettingsVO(webAutoProperties.getContextPath()));
+        return ResponseVO.success(new SettingsVO(
+                webAutoProperties.getContextPath(),
+                webAutoProperties.getGrafanaDashboardUrl()
+        ));
     }
 }

@@ -27,9 +27,10 @@ dynamic-thread-pool:
       password: dtp
     context-path: /dtp
     enabled: true
+    grafana-dashboard-url: http://192.168.67.129:3000/d/cdvvy9felux34e/e58aa8-e68081-e7babf-e7a88b-e6b1a0-e79b91-e68ea7?orgId=2&refresh=5s&theme=light
   alarm:
     enabled: true
     access-token:
-      ding-ding: 13b22f8864df3948d90b561cf70f5099c694b86a3a0f6d8ffe3cf9448ae813ab
+      ding-ding: xxx
     use-platform:
       - "DingDing"

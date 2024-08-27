@@ -5,10 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="后端优化：整合监控 Prometheus+Grafana">
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112236524.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112258325.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112413363.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112432470.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112632390.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112756189.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112807222.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112846450.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112852251.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827112932519.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113012125.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113317054.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113334430.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113525322.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113609897.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827113703821.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114120358.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114149066.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114451399.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827114913775.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115050494.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115452285.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115504869.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115515976.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgs/image-20240827115538458.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/DynamicThreadPoolWebAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/~$动态线程池组件.drawio.bkp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/~$动态线程池组件.drawio.dtmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件-BUG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件-BUG.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/documents/动态线程池组件.drawio" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/config/properties/DynamicThreadPoolWebAutoProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/controller/SettingsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/model/vo/SettingsVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/java/cn/notcoder/dtp/sdk/dynamicthreadpoolspringbootstarter/web/model/vo/SettingsVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-spring-boot-starter/src/main/resources/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic-thread-pool-test/src/main/resources/application-dev.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +151,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/code/dynamic-thread-pool/dynamic-thread-pool-spring-boot-starter/src/main/resources",
+    "last_opened_file_path": "E:/code/dynamic-thread-pool/imgs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,11 +172,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\dynamic-thread-pool\imgs" />
       <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources" />
       <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources\web" />
       <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-spring-boot-starter\src\main\resources\static" />
       <recent name="E:\code\dynamic-thread-pool\docs\dev-ops\grafana" />
-      <recent name="E:\code\dynamic-thread-pool\dynamic-thread-pool-test-two\src\main\java\cn\notcoder\dynamicthreadpooltesttwo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code\dynamic-thread-pool\docs\dev-ops\prometheus" />
@@ -307,7 +341,10 @@
       <workItem from="1724146441426" duration="5743000" />
       <workItem from="1724466956119" duration="21028000" />
       <workItem from="1724554131889" duration="18932000" />
-      <workItem from="1724637125950" duration="26381000" />
+      <workItem from="1724637125950" duration="27248000" />
+      <workItem from="1724681452266" duration="24000" />
+      <workItem from="1724681487791" duration="1077000" />
+      <workItem from="1724725223658" duration="6614000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />

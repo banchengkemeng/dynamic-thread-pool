@@ -12,4 +12,5 @@ import java.io.Serializable;
 public class SettingsVO implements Serializable {
 
     private String apiContextPath;
+    private String grafanaDashboardUrl;
 }

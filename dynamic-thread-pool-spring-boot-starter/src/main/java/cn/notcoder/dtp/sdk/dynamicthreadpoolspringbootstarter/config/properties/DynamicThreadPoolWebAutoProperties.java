@@ -22,6 +22,8 @@ public class DynamicThreadPoolWebAutoProperties {
      */
     private Auth auth = new Auth();
 
+    private String grafanaDashboardUrl = "http://localhost:3000";
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
