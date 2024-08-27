@@ -16,7 +16,7 @@ dynamic-thread-pool:
     redis:
       host: 192.168.67.129
       port: 16379
-	  # 在 docs/dev-ops/redis/redis.conf 中可以配置
+      # 在 docs/dev-ops/redis/redis.conf 中可以配置
       password: bancheng666..
     # 上报线程池列表的定时任务cron
     report-cron: "0/10 * * * * ?"
@@ -41,7 +41,7 @@ dynamic-thread-pool:
   
   # 告警推送配置
   alarm:
-  	# 是否开启
+    # 是否开启
     enabled: true
     # 钉钉webhook机器人access-token
     access-token:

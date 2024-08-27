@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="收尾,README.md更新">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="更新 README.md">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,7 +307,7 @@
       <workItem from="1724637125950" duration="27248000" />
       <workItem from="1724681452266" duration="24000" />
       <workItem from="1724681487791" duration="1077000" />
-      <workItem from="1724725223658" duration="7226000" />
+      <workItem from="1724725223658" duration="7328000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -390,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724732357468</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="更新 README.md">
+      <option name="closed" value="true" />
+      <created>1724732912787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724732912787</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +429,8 @@
     <MESSAGE value="后端优化：增加告警机制" />
     <MESSAGE value="后端优化：整合监控 Prometheus+Grafana" />
     <MESSAGE value="收尾,README.md更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="收尾,README.md更新" />
+    <MESSAGE value="更新 README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新 README.md" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
