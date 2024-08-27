@@ -5,32 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8cd9a3e2-bebc-4cb0-bf9f-7c37a46d20fc" name="Changes" comment="更新 README.md">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112236524.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112258325.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112413363.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112432470.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112632390.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112756189.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112807222.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112846450.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112852251.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827112932519.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113012125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113317054.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113334430.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113525322.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113609897.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827113703821.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827114120358.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827114149066.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827114451399.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827114913775.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827115050494.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827115452285.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827115504869.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827115515976.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgs/image-20240827115538458.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -332,7 +307,7 @@
       <workItem from="1724637125950" duration="27248000" />
       <workItem from="1724681452266" duration="24000" />
       <workItem from="1724681487791" duration="1077000" />
-      <workItem from="1724725223658" duration="7776000" />
+      <workItem from="1724725223658" duration="9005000" />
     </task>
     <task id="LOCAL-00001" summary="update README.md">
       <option name="closed" value="true" />
@@ -438,7 +413,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724733388650</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="更新 README.md">
+      <option name="closed" value="true" />
+      <created>1724733457691</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1724733457691</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
