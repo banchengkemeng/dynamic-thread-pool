@@ -1,6 +1,19 @@
 # 动态线程池组件
 # 项目介绍
 
+## 简介
+本项目是采用分布式架构的动态线程池组件，通过SpringBoot Starter的形式引入业务项目，自带web页面，可监控系统的线程池运行状态，动态修改线程池参数，解决并发业务中实际环境复杂，线程池参数不易设置恰当，而重新设置参数却需要重启系统的弊端。
+
+## 技术选型
+- Umi
+- React
+- Ant Design
+- SpringBoot
+- Redis
+- Micrometer
+- Prometheus
+- Grafana
+
 ## 预览
 
 ![image-20240827115452285](https://dtp-pictures.oss-cn-beijing.aliyuncs.com/image-20240827115452285.png)
