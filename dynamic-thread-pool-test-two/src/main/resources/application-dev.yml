@@ -23,6 +23,6 @@ dynamic-thread-pool:
   alarm:
     enabled: true
     access-token:
-      ding-ding: xxx
+      ding-ding: xx
     use-platform:
       - "DingDing"
