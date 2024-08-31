@@ -88,6 +88,8 @@ dynamic-thread-pool:
    ```yaml
        static_configs:
        # 业务项目的公网地址 (引入动态线程池组件starter的项目)
+       # 不要写localhost/127.0.0.1, 写局域网ip/host, 因为prometheus是
+       # 在容器内的, localhost访问的是容器本身的端口, 但目的是访问宿主机
          - targets: ['192.168.67.1:8091', '192.168.67.1:8092']
    ```
 
